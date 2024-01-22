@@ -1,0 +1,13 @@
+{
+  "webhooks": [
+    "POST/api/2.0/settings/webhook",
+    "PUT/api/2.0/settings/webhook/%7bid%7d",
+    "GET/api/2.0/settings/webhooks/log",
+    "GET/api/2.0/settings/webhooks",
+    "GET/api/2.0/settings/webhook",
+    "DELETE/api/2.0/settings/webhook",
+    "PUT/api/2.0/settings/webhook/%7bid%7d/retry",
+    "PUT/api/2.0/settings/webhook/retry",
+    "PUT/api/2.0/settings/webhook"
+  ]
+}
