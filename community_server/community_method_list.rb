@@ -17,18 +17,23 @@ include Parse
 
 # USAGE API
 SECTION = 'section'
-DATA = 'files/files'
+DATA = 'authentication'
 ELEMENT, KEY = DATA.split('/')
-XPATH = "//a[contains(@href, '#{SECTION}/#{ELEMENT}/#{KEY}')]/following-sibling::ul/li/a"
-logger.info XPATH
 
-elements = @driver.find_elements(:xpath, XPATH)
-
-# print/write json
-elements = parsing(elements)
-pretty_json = JSON.pretty_generate("#{KEY}": elements)
-print pretty_json
+case KEY
+when nil
+  XPATH = "//a[contains(@href, '#{SECTION}/#{ELEMENT}')]/following-sibling::ul/li/a"
+  logger.info XPATH
+  elements = @driver.find_elements(:xpath, XPATH)
+  pretty_json = JSON.pretty_generate("#{ELEMENT}": parsing(elements))
+else
+  XPATH = "//a[contains(@href, '#{SECTION}/#{ELEMENT}/#{KEY}')]/following-sibling::ul/li/a"
+  logger.info XPATH
+  elements = @driver.find_elements(:xpath, XPATH)
+  pretty_json = JSON.pretty_generate("#{KEY}": parsing(elements))
+end
 
 File.write(File.join(Dir.pwd,'community_server','community_server_method.json'), pretty_json)
+print pretty_json
 
 @driver.quit

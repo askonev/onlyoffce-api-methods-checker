@@ -1,23 +1,8 @@
 {
-  "files": [
-    "POST/api/2.0/files/templates",
-    "PUT/api/2.0/files/file/%7bfileid%7d/history",
-    "POST/api/2.0/files/file/%7bfileid%7d/copyas",
-    "POST/api/2.0/files/%7bfolderid%7d/file",
-    "POST/api/2.0/files/%40my/file",
-    "DELETE/api/2.0/files/file/%7bfileid%7d",
-    "DELETE/api/2.0/files/templates",
-    "GET/api/2.0/files/file/%7bfileid%7d/presigneduri",
-    "GET/api/2.0/files/%7bfileid%7d/properties",
-    "GET/api/2.0/files/file/%7bfileid%7d/history",
-    "GET/api/2.0/files/file/%7bfileid%7d",
-    "GET/api/2.0/files/file/%7bfileid%7d/openedit",
-    "PUT/api/2.0/files/file/%7bfileid%7d/saveediting",
-    "PUT/api/2.0/files/%7bfileid%7d/properties",
-    "PUT/api/2.0/files/batch/properties",
-    "POST/api/2.0/files/file/%7bfileid%7d/startedit",
-    "GET/api/2.0/files/file/%7bfileid%7d/trackeditfile",
-    "PUT/api/2.0/files/file/%7bfileid%7d",
-    "PUT/api/2.0/files/%7bfileid%7d/update"
+  "authentication": [
+    "POST/api/2.0/authentication",
+    "POST/api/2.0/authentication/%7bcode%7d",
+    "POST/api/2.0/authentication/sendsms",
+    "POST/api/2.0/authentication/setphone"
   ]
 }
