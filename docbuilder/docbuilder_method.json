@@ -1,31 +1,5 @@
 {
-  "apislide": [
-    "AddObject",
-    "ApplyLayout",
-    "ApplyTheme",
-    "ClearBackground",
-    "Copy",
-    "Delete",
-    "Duplicate",
-    "FollowLayoutBackground",
-    "FollowMasterBackground",
-    "GetAllCharts",
-    "GetAllDrawings",
-    "GetAllImages",
-    "GetAllOleObjects",
-    "GetAllShapes",
-    "GetClassType",
-    "GetHeight",
-    "GetLayout",
-    "GetSlideIndex",
-    "GetTheme",
-    "GetVisible",
-    "GetWidth",
-    "MoveTo",
-    "RemoveAllObjects",
-    "RemoveObject",
-    "SetBackground",
-    "SetVisible",
-    "ToJSON"
+  "apidocument": [
+    "InsertTextForm"
   ]
 }

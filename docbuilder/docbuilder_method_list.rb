@@ -2,18 +2,6 @@
 
 require_relative '../manager'
 
-# require 'selenium-webdriver'
-#
-# # configure the driver to run in headless mode
-# options = Selenium::WebDriver::Chrome::Options.new
-# options.add_argument('--headless')
-# driver = Selenium::WebDriver.for :chrome, options: options
-
-# REDACTOR = 'textdocumentapi'
-# REDACTOR = 'spreadsheetapi'
-REDACTOR = 'presentationapi'
-
-@driver.navigate.to "https://api.teamlab.info/docbuilder/#{REDACTOR}"
 
 def cutoff_after_blank(array)
   array.each_with_index do |el, i|
@@ -32,9 +20,21 @@ def array_cleanup(array)
   cutoff_after_blank(array)
 end
 
-#######################
+# require 'selenium-webdriver'
+#
+# # configure the driver to run in headless mode
+# options = Selenium::WebDriver::Chrome::Options.new
+# options.add_argument('--headless')
+# driver = Selenium::WebDriver.for :chrome, options: options
 
-KEY = 'apislide'
+# REDACTOR = 'textdocumentapi'
+# REDACTOR = 'spreadsheetapi'
+# REDACTOR = 'presentationapi'
+REDACTOR = 'formapi'
+
+@driver.navigate.to "https://api.teamlab.info/docbuilder/#{REDACTOR}"
+
+KEY = 'apidocument'
 
 XPATH = "//li/a[contains(@href, '/docbuilder/#{REDACTOR}/#{KEY}')]"
 elements = @driver.find_elements(:xpath, XPATH)
