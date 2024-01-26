@@ -20,21 +20,14 @@ def array_cleanup(array)
   cutoff_after_blank(array)
 end
 
-# require 'selenium-webdriver'
-#
-# # configure the driver to run in headless mode
-# options = Selenium::WebDriver::Chrome::Options.new
-# options.add_argument('--headless')
-# driver = Selenium::WebDriver.for :chrome, options: options
-
 # REDACTOR = 'textdocumentapi'
 # REDACTOR = 'spreadsheetapi'
-# REDACTOR = 'presentationapi'
-REDACTOR = 'formapi'
+REDACTOR = 'presentationapi'
+# REDACTOR = 'formapi'
 
 @driver.navigate.to "https://api.teamlab.info/docbuilder/#{REDACTOR}"
 
-KEY = 'apidocument'
+KEY = 'api'
 
 XPATH = "//li/a[contains(@href, '/docbuilder/#{REDACTOR}/#{KEY}')]"
 elements = @driver.find_elements(:xpath, XPATH)
