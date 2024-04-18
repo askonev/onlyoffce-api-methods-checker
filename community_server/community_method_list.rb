@@ -1,4 +1,4 @@
-# frozen_string_literal: true
+g# frozen_string_literal: true
 
 require_relative '../manager'
 
@@ -8,7 +8,7 @@ include Parse
 
 #########################
 
-# HOSTED SOLUTION
+# # HOSTED SOLUTION
 # SECTION = 'portalsection'
 # XPATH = "//a[contains(@href, 'apisystem/#{SECTION}')]/following-sibling::ul/li/a"
 # print XPATH
@@ -16,8 +16,8 @@ include Parse
 # p elements
 
 # USAGE API
-SECTION = 'section'
-DATA = 'authentication'
+SECTION = 'crm'
+DATA = 'contacts'
 ELEMENT, KEY = DATA.split('/')
 
 case KEY

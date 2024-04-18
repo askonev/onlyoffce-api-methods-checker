@@ -27,7 +27,7 @@ REDACTOR = 'presentationapi'
 
 @driver.navigate.to "https://api.teamlab.info/docbuilder/#{REDACTOR}"
 
-KEY = 'api'
+KEY = 'apipresentation'
 
 XPATH = "//li/a[contains(@href, '/docbuilder/#{REDACTOR}/#{KEY}')]"
 elements = @driver.find_elements(:xpath, XPATH)
