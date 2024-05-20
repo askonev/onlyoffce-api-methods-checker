@@ -1,24 +1,5 @@
 {
-  "apipresentation": [
-    "AddMaster",
-    "AddSlide",
-    "ApplyTheme",
-    "CreateNewHistoryPoint",
-    "GetAllComments",
-    "GetClassType",
-    "GetCurrentSlide",
-    "GetCurSlideIndex",
-    "GetHeight",
-    "GetMaster",
-    "GetMastersCount",
-    "GetSlideByIndex",
-    "GetSlidesCount",
-    "GetWidth",
-    "RemoveSlides",
-    "ReplaceCurrentImage",
-    "SetLanguage",
-    "SetSizes",
-    "SlidesToJSON",
-    "ToJSON"
+  "apidocument": [
+    "InsertTextForm"
   ]
 }
