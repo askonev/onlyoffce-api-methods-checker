@@ -4,10 +4,10 @@ require_relative '../manager'
 
 include Parse
 
-@driver.navigate.to 'https://api.teamlab.info/docspace/basic'
+@driver.navigate.to 'https://api.teamlab.info/docspace/backend/'
 # @driver.navigate.to 'https://api.onlyoffice.com/docspace/basic'
 
-DATA = 'group'
+DATA = 'settings/cookies'
 SECTION = 'section'
 
 def _write(json)

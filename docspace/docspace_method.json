@@ -1,15 +1,6 @@
 {
-  "group": [
-    "POST/api/2.0/groups",
-    "PUT/api/2.0/groups/%7bid%7d/members",
-    "DELETE/api/2.0/groups/%7bid%7d",
-    "GET/api/2.0/groups/%7bid%7d",
-    "GET/api/2.0/groups",
-    "GET/api/2.0/groups/user/%7buserid%7d",
-    "PUT/api/2.0/groups/%7bfromid%7d/members/%7btoid%7d",
-    "DELETE/api/2.0/groups/%7bid%7d/members",
-    "POST/api/2.0/groups/%7bid%7d/members",
-    "PUT/api/2.0/groups/%7bid%7d/manager",
-    "PUT/api/2.0/groups/%7bid%7d"
+  "cookies": [
+    "GET/api/2.0/settings/cookiesettings",
+    "PUT/api/2.0/settings/cookiesettings"
   ]
 }
