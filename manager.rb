@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'selenium-webdriver'
+require 'page-object'
 require 'logger'
 require_relative 'lib/parse_helper'
 
