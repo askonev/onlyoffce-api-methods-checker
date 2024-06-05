@@ -20,16 +20,16 @@ def array_cleanup(array)
   cutoff_after_blank(array)
 end
 
-REDACTOR = 'textdocumentapi'
+# REDACTOR = 'textdocumentapi'
 # REDACTOR = 'spreadsheetapi'
-# REDACTOR = 'presentationapi'
+REDACTOR = 'presentationapi'
 # REDACTOR = 'formapi'
 
-@driver.navigate.to "https://api.teamlab.info/docbuilder/#{REDACTOR}"
+@driver.navigate.to "https://api.teamlab.info/officeapi/#{REDACTOR}"
 
-KEY = 'api'
+KEY = 'apicommentreply'
 
-XPATH = "//li/a[contains(@href, '/docbuilder/#{REDACTOR}/#{KEY}')]"
+XPATH = "//li/a[contains(@href, '/officeapi/#{REDACTOR}/#{KEY}')]"
 elements = @driver.find_elements(:xpath, XPATH)
 element_array =  elements.map { |el| el.attribute('title')  }
 element_array = array_cleanup(element_array)
